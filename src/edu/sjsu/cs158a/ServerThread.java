@@ -19,7 +19,7 @@ public class ServerThread implements Runnable {
             var bos = new BufferedOutputStream(sock.getOutputStream());
 
             //Send welcome message to client
-            sendMessage("welcome to CS 158A. send id and name, and i'll send a PIN which you must also send ", bos);
+            sendMessage("welcome to CS 158A. send id and name, and i'll send a PIN which you must also send", bos);
 
             //Receive client response containing client information
             byte[] num = bis.readNBytes(4);
